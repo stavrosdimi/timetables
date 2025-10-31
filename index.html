@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Academic Year 2025–26 | Timetable Navigator</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="script.js"></script>
+</head>
+<body>
+  
+<div class="navbar">
+  <div class="navwrap">
+    <div style="display:flex;align-items:center;gap:10px">
+      <img src="assets/logo.svg" alt="logo"/>
+      <span class="kicker">Timetable Navigator</span>
+      <span class="small">| Home</span>
+    </div>
+    <div class="navbtns">
+      <button class="navbtn" onclick="goHome()">Home</button>
+      <button class="navbtn" onclick="goBack()">Go Back</button>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="header">
+      <span class="badge">Academic Year 2025–26</span>
+      <h1>Choose a semester</h1>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Semester 1</h3>
+        <p>View all undergraduate & postgraduate courses offered in Semester 1.</p>
+        <div class="actions">
+          <a class="button" href="courses/semester1.html">Open Semester 1</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Semester 2</h3>
+        <p>View all undergraduate & postgraduate courses offered in Semester 2.</p>
+        <div class="actions">
+          <a class="button" href="courses/semester2.html">Open Semester 2</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Staff Timetables</h3>
+        <p>View your personalised timetable.</p>
+        <div class="actions">
+          <!-- FIXED: point to the file inside /staff -->
+          <a class="button" href="staff/staff.html">Open Staff Timetables</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">Timetable Generated 2025-10-22 by Stavros Dimitriou</div>
+  </div>
+</body>
+</html>

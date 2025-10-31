@@ -1,0 +1,36 @@
+
+:root{
+  --bg:#0b1220;
+  --card:#111a2e;
+  --ink:#e6ecff;
+  --muted:#9fb0d9;
+  --accent:#7aa2ff;
+  --accent-2:#52e5a1;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Noto Sans,Arial,'Apple Color Emoji','Segoe UI Emoji';background:var(--bg);color:var(--ink)}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{display:flex;gap:12px;align-items:center;margin:12px 0 24px}
+.badge{padding:6px 10px;border:1px solid #253357;border-radius:999px;color:var(--muted);font-size:12px}
+h1{margin:0;font-size:28px;letter-spacing:0.2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:linear-gradient(180deg,#0f1a33, #0c1427);border:1px solid #233150;border-radius:20px;padding:18px;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.card h3{margin-top:0;margin-bottom:8px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.button{display:inline-flex;align-items:center;gap:8px;border:1px solid #2a3a61;background:#0f1a33;border-radius:12px;padding:8px 12px;color:var(--ink);font-weight:600}
+.button:hover{transform:translateY(-1px);transition:transform .15s ease-out}
+.kicker{color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:1px;font-size:12px}
+.footer{margin-top:32px;color:var(--muted);font-size:12px;text-align:center}
+.navbar{position:sticky;top:0;z-index:10;background:rgba(11,18,32,.8);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid #213052}
+.navwrap{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:10px 24px}
+.navbtns{display:flex;gap:8px}
+.navbtn{border:1px solid #2a3a61;background:#0f1a33;border-radius:999px;padding:8px 12px;color:var(--ink);font-size:14px}
+.navbtn:hover{transform:translateY(-1px);transition:transform .15s ease-out}
+.small{font-size:12px;color:var(--muted)}
+.hr{height:1px;background:#223154;margin:18px 0;border:0}
+.list{display:flex;flex-direction:column;gap:10px}
+.list a{padding:12px 14px;border:1px solid #27375e;border-radius:14px;background:linear-gradient(180deg,#0f1a33,#0c1427);display:flex;justify-content:space-between;align-items:center}
+.code{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;color:var(--accent-2)}
